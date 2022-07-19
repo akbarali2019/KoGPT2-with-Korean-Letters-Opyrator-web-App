@@ -17,8 +17,8 @@ class Input(BaseModel):
 
     max_length: int = Field(
         128,
-        ge=5,
-        le=128
+        ge=5,  #greater than equal to 5
+        le=128 #less than equal to 128
     )
 
     repetition_penalty: float = Field(
